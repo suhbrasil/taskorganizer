@@ -16,6 +16,10 @@ return new class extends Migration {
             $table->id();
             $table->string('name');
             $table->string('comment');
+            $table->dateTime('date');
+            $table->integer('user_id');
+            $table->integer('status_id');
+            $table->dateTime('completed_date');
             $table->timestamps();
         });
     }
